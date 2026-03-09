@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>페이지 이동 중...</title>
+    <meta name="referrer" content="no-referrer">
     <style>
-        /* 깔끔하고 전문적인 느낌의 공공기관 스타일 CSS */
         body { 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
             height: 100vh; margin: 0; font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; 
@@ -31,7 +31,8 @@
 
     <script>
         setTimeout(function() {
-            location.replace("https://script.google.com/macros/s/AKfycbzk4taNyoNqBaTjrBVJTgEhyYI1Eg5eQ3GgIR1sgm43IAU-uxP8TNCqkG92T8-43RRG/exec");
+            // 문제가 되었던 replace 대신, 제일 처음 쓰셨던 방식과 똑같이 작동하는 href를 사용합니다.
+            window.location.href = "https://script.google.com/macros/s/AKfycbzk4taNyoNqBaTjrBVJTgEhyYI1Eg5eQ3GgIR1sgm43IAU-uxP8TNCqkG92T8-43RRG/exec";
         }, 50);
     </script>
 </body>
